@@ -44,7 +44,7 @@ ekran görüntüsündeki gibi eklenir. Emlak gelirinin aylık geliri hesaplanara
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/84c964c8-53bc-48b0-93d8-3cb8b2c66845)
 
 ** " Varlıklar " kısmının son alt başlığı olan " Mevduat " Kısmı kullanıcı sahip olduğu bir mevduattan elde ettiği faiz gelirini hesaplar. Kullanıcı mevduat miktarını , bankanın uyguladığı faiz miktarını
-ve son olarakta vade gün sayısını girerekten girdiği gün sayısındai kazancı " Mevduat " kısmına yansırken bu gelirin aylığa oranı yani 30 güne tekabül eden miktarı " Gelirler " kısmına aktarılır.
+ve son olarakta vade gün sayısını girerekten girdiği gün sayısındaki kazancı " Mevduat " kısmına yansırken bu gelirin aylığa oranı yani 30 güne tekabül eden miktarı " Gelirler " kısmına aktarılır.
 
 ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/9e1d2acc-a8fa-41bc-9d7b-a0204dc104b9)
 
