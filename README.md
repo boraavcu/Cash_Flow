@@ -1,6 +1,8 @@
 # Cash_Flow
 Cash_Flow
+
 ** Bu Cash Flow ( nakit akımı / girişi ) uygulaması, freelance olarak yaptığım ve özelliklerinin tamamı alıcının tarafından tasarlanıp isteklerine göre kodlanmıştır.
+
 ** Uygulamanın nasıl kullanacağı ve amacının ne olduğunu aşağıda resimli olaraktan anlatacağım.
 
 **![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/3ebe825d-72fd-4378-993e-aa5118a0df3e)
