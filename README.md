@@ -1,7 +1,7 @@
 # Cash_Flow
 Cash_Flow
 
-** Bu Cash Flow ( nakit akımı / girişi ) uygulaması, freelance olarak yaptığım ve özelliklerinin tamamı alıcının tarafından tasarlanıp isteklerine göre kodlanmıştır.
+** Bu Cash Flow ( nakit akımı / girişi ) uygulaması, freelance olarak yaptığım ve özelliklerinin tamamı alıcının isteklerine göre tasarlanıp, kodlanmıştır.
 
 ** Uygulamanın nasıl kullanacağı ve amacının ne olduğunu aşağıda resimli olaraktan anlatacağım.
 
