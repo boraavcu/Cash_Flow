@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nakit Akışı</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container" id="maincon">
+            <div class="row mb-3" style="display: flex">
+                <div class="col-6">
+                    <div class="col p-2" style="background-color: #287271; color: white">
+                        <h3 style="font-family: 'Poppins', sans-serif">GELİRLER</h3>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col p-2">
+                        <h5 style="font-family: 'Poppins', sans-serif; text-align: center">Tasarruf, sizi bekleyen fırsatlara kapı açar</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- GELİRLER -->
+            <div class="row">
+                <div class="col-6 p-2">
+                    <div class="col p-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <button class="isleme-ekle mb-1" style="font-family: 'Poppins', sans-serif" onclick="acPopup2()">Gelir Ekle</button>
+                            </div>
+                            <div class="col-6" style="text-align: end">
+                                <span style="margin-right: 15px; margin-left: -140px; margin-top: 24px !important; position: absolute; font-family: 'Poppins', sans-serif">NAKİT AKIŞINIZ</span>
+                            </div>
+                        </div>
+                        <div class="kategori akate" id="gelir">
+                            <ul class="islemler"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GİDERLER -->
+                <div class="col-6">
+                    <div class="col barin">
+                        <p style="text-align: start; font-family: 'Poppins', sans-serif; font-size: 18px">Toplam Aylık Gideriniz: <span id="toplamGider">0</span></p>
+                        <div class="bar">
+                            <div class="doluluk"></div>
+                            <div class="triangle"></div>
+                            <p class="passive-income mt-2" style="font-family: 'Poppins', sans-serif">Aylık Pasif Geliriniz: <span id="toplamPasif" class="sıfırlama">0</span></p>
+                        </div>
+                    </div>
+                    <div class="col barin barinx">
+                        <div class="bar">
+                            <div class="doluluk2" id="doluluk2"></div>
+                        </div>
+                        <div>
+                            <p style="font-family: 'Poppins', sans-serif">Pasif Gelirinizle Ana Borcunuzu Ödeme Süreniz <span id="ToplamSüre">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3" style="display: flex">
+                <div class="col-6">
+                    <div class="col p-2" style="background-color: #287271; color: white">
+                        <h3 style="font-family: 'Poppins', sans-serif">GİDERLERİNİZ</h3>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col p-2"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6" style="display: flex">
+                    <div class="col-6" style="display: flex">
+                        <div class="col-6">
+                            <button class="isleme-ekle mb-1" style="font-family: 'Poppins', sans-serif" onclick="acPopupGider()">Gider Ekle</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="isleme-ekle mb-1" style="font-family: 'Poppins', sans-serif" onclick="acPopup()">Çocuk Gideri</button>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <div class="col-6">
+                    <div class="col" style="font-family: 'Poppins', sans-serif; text-align: center">
+                        <p style="font-size: 15px">AYLIK PASİF GELİRİNİZ İLE AYLIK GİDERLERİNİZİ KARŞILAMA ORANINIZ <span id="OranKarşılama">0</span></p>
+                        <br />
+                        <p>Toplam Aylık Geliriniz: <span id="toplamGelir">0</span></p>
+                        <br />
+                        <p>Toplam Ana Borcunuz: <span id="toplamBorc">0</span></p>
+                        <hr />
+                        <p>Net Aylık Geliriniz: <span id="netGelir">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="col">
+                        <div class="kategori katedit" id="gider">
+                            <!-- <h2>Giderleriniz</h2> -->
+                            <ul class="islemler"></ul>
+                            <div id="popup4" style="display: none">
+                                <button id="close-button" onclick="kapatPopup()">X</button>
+
+                                <label style="margin-bottom: 5px" for="gider-ad">Giderinizin Adı</label><br />
+                                <input style="margin-right: 3px" type="text" maxlength="10" id="gider-ad" /><br />
+
+                                <label style="margin-bottom: 5px" for="gider-miktar">Giderinizin Miktarı</label><br />
+                                <input style="margin-right: 3px" type="number" id="gider-miktar" /><br />
+
+                                <button onclick="ekleGider()">Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" style="display: flex">
+                    <div class="col-6 dugmeler">
+                        <button class="isleme-ekle mb-3" style="font-family: 'Poppins', sans-serif" onclick="sifirla(); sifirlaIsimler();">Sıfırla</button>
+                    </div>
+                    <div class="col-6 dugmeler">
+                        <button class="isleme-ekle mb-3" style="font-family: 'Poppins', sans-serif" onclick="hesaplaVeGuncelle()">Toplamları Hesapla</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="col" style="padding-right: 13px; padding-left: 13px">
+                    <div class="row">
+                        <div class="col-6 ciftati">
+                            <div class="col p-2">
+                                <h3 style="font-family: 'Poppins', sans-serif; margin-left: -10px; color: white">VARLIKLARINIZ</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 ciftati">
+                            <div class="col">
+                                <h3 style="font-family: 'Poppins', sans-serif; margin-left: -10px; color: white">BORÇLARINIZ</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hisse / Temettü -->
+            <div class="row">
+                <div class="col-6" id="varliklar">
+                    <div class="col p-2 mb-3" style="background-color: #287271; color: white">
+                        <h5 style="font-family: 'Poppins', sans-serif">Hisse / Temettü</h5>
+                    </div>
+                    <div class="col mb-3">
+                        <button style="font-family: 'Poppins', sans-serif" class="isleme-ekle bunytr" onclick="acPopup4()">Hisse Senedi / Temettü Ekle</button>
+                    </div>
+                    <div class="col">
+                        <div class="kategori isodet">
+                            <ul class="islemler"></ul>
+                        </div>
+                    </div>
+                    <div class="col p-2 mb-3" style="background-color: #287271; color: white">
+                        <h5 style="font-family: 'Poppins', sans-serif">EMLAK</h5>
+                    </div>
+                    <div class="col mb-3">
+                        <button style="font-family: 'Poppins', sans-serif" class="isleme-ekle bunytr" onclick="acPopupEmlak()">Emlak Geliri Ekle</button>
+                    </div>
+                    <div class="kategori isodet" style="font-family: 'Poppins', sans-serif; color: white">
+                        <ul class="islemler2"></ul>
+                    </div>
+                    <div class="col p-2 mb-3" style="background-color: #287271; color: white">
+                        <h5 style="font-family: 'Poppins', sans-serif">MEVDUAT</h5>
+                    </div>
+                    <div class="col mb-3">
+                        <button style="font-family: 'Poppins', sans-serif" class="isleme-ekle bunytr" onclick="acPopup6()">Mevduat Faiz Ekle</button>
+                    </div>
+                    <div class="kategori isodet" style="font-family: 'Poppins', sans-serif; color: white">
+                        <ul class="islemler3"></ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col p-2 mb-3" style="background-color: #287271; color: white">
+                        <h5 style="font-family: 'Poppins', sans-serif">BORÇLAR</h5>
+                    </div>
+                    <div class="col mb-3">
+                        <button style="font-family: 'Poppins', sans-serif" class="isleme-ekle bunytra" onclick="acPopupBorc()">Borç Ekle</button>
+                    </div>
+                    <div class="kategori isodet" id="borclar" style="font-family: 'Poppins', sans-serif; color: white">
+                        <ul class="islemler2"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kategoriler">
+                <div id="popup3" style="display: none">
+                    <button id="close-button" onclick="kapatPopup()">X</button>
+
+                    <label for="gelir-ad">Gelirinizin Adı</label><br />
+                    <input style="margin-right: 3px; margin-bottom: 5px" type="text" id="gelir-ad" maxlength="10" /><br />
+
+                    <label for="gelir-miktar">Geliri Miktarı</label><br />
+                    <input style="margin-right: 3px; margin-bottom: 5px" type="number" id="gelir-miktar" /><br />
+                    <button onclick="ekleGelir()">Ekle</button>
+                </div>
+
+                <!-- G İ D E R L E R-->
+                <div id="popup" class="popupcouk" style="display: none">
+                    <button id="close-button" onclick="kapatPopup()">X</button>
+                    <label for="yas-grubu">Yaş Grubu</label>
+                    <select style="align-items: center" id="yas-grubu">
+                        <option value="SeçimGrup">Seçiniz...</option>
+                        <option value="0-3">0-3 yaş</option>
+                        <option value="3-6">3-6 yaş</option>
+                        <option value="7-14">7-14 yaş</option>
+                        <option value="14-21">14-21 yaş</option>
+                    </select>
+                    <br />
+                    <label for="cocuk-sayisi">Çocuk Sayısı</label>
+                    <select style="align-items: center" id="cocuk-sayisi">
+                        <option value="SeçimSayi">Seçiniz...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br />
+                    <button onclick="hesapla()">Hesapla</button>
+                </div>
+                <!-- V A R L I K L A R -->
+                <div id="popup7" style="display: none">
+                    <button id="close-button-7" onclick="kapatPopup()">X</button><br />
+                    <label for="hisseAdi">Hisse / Temettü Adı veya Kodu</label><br />
+                    <input style="margin-right: 3px" type="text" maxlength="10" id="hisseAdi" /><br />
+                    <label for="adet">Kaç Adet</label><br />
+                    <input style="margin-right: 3px" type="number" id="adet" /><br />
+                    <label for="fiyat">Alım Fiyatınız</label><br />
+                    <input style="margin-right: 3px" type="number" id="fiyat" /><br />
+                    <label for="temettu">Hisse Başı Temettü Getirisi</label><br />
+                    <input style="margin-right: 3px" type="number" id="temettu" /><br />
+                    <label for="aralik">Temettü Getiri Aralığı</label><br />
+                    <select id="aralik">
+                        <option value="SecTemettu">Seçiniz...</option>
+                        <option value="1">1 Aylık</option>
+                        <option value="2">2 Aylık</option>
+                        <option value="3">3 Aylık</option>
+                        <option value="4">4 Aylık</option>
+                        <option value="5">5 Aylık</option>
+                        <option value="6">6 Aylık</option>
+                        <option value="7">7 Aylık</option>
+                        <option value="8">8 Aylık</option>
+                        <option value="9">9 Aylık</option>
+                        <option value="10">10 Aylık</option>
+                        <option value="11">11 Aylık</option>
+                        <option value="12">12 Aylık</option></select
+                    ><br />
+                    <button onclick="ekleVarlik()">Ekle</button>
+                </div>
+                <div id="popupEmlak" style="display: none">
+                    <button id="close-button-7" onclick="kapatPopupEmlak()">X</button><br />
+                    <label for="emlakTipi">Emlak Tipi Giriniz</label><br />
+                    <input style="margin-right: 3px" type="text" maxlength="10" id="emlakTipi" /><br />
+                    <label for="gelir-emlak">Geliri Giriniz</label><br />
+                    <input style="margin-right: 3px" type="number" id="gelir-emlak" /><br />
+                    <label for="ay-emlak">Ay Seçiniz</label><br />
+                    <select id="ay-emlak">
+                        <option value="SecAy">Seçiniz...</option>
+                        <option value="1">1 Aylık</option>
+                        <option value="2">2 Aylık</option>
+                        <option value="3">3 Aylık</option>
+                        <option value="4">4 Aylık</option>
+                        <option value="5">5 Aylık</option>
+                        <option value="6">6 Aylık</option>
+                        <option value="7">7 Aylık</option>
+                        <option value="8">8 Aylık</option>
+                        <option value="9">9 Aylık</option>
+                        <option value="10">10 Aylık</option>
+                        <option value="11">11 Aylık</option>
+                        <option value="12">12 Aylık</option></select
+                    ><br />
+                    <button onclick="ekleEmlak()">Ekle</button>
+                </div>
+                <div id="popup6" style="display: none">
+                    <button id="close-button" onclick="kapatPopup()">X</button><br />
+                    <label for="mevduat-miktar">Mevduat Miktarınız</label><br />
+                    <input style="margin-right: 3px; margin-bottom: 3px" type="number" id="mevduat-miktar" /><br />
+                    <label for="faiz-orani">Faiz Oranınız</label><br />
+                    <input style="margin-right: 3px; margin-bottom: 3px" type="number" id="faiz-orani" /><br />
+                    <label for="gun-secimi">Vade (Gün)</label><br />
+                    <input style="margin-right: 3px; margin-bottom: 3px" type="number" id="gun-secimi" /><br />
+                    <label for="Dikkat">*Genel Olarak Bankalar %5 Vergi Almaktadır</label><br />
+                    <button onclick="ekleMevduat()">Ekle</button>
+                </div>
+                <div id="popup5" style="display: none">
+                    <button id="close-button" onclick="kapatPopup()">X</button>
+                    <label for="borc-adi">Borcunuz Adı</label><br />
+                    <input style="margin-bottom: 10px" type="text" maxlength="10" id="borc-adi" />
+                    <br />
+                    <label for="borc-miktari">Borcunuzun Toplam Miktarı</label><br />
+                    <input style="margin-bottom: 10px" type="number" id="borc-miktari" />
+                    <br />
+                    <label for="kalan-taksit">Borcunuzun Kalan Taksiti</label><br />
+                    <input style="margin-bottom: 10px" type="number" id="kalan-taksit" />
+                    <br />
+                    <button onclick="ekleBorc()">Ekle</button>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

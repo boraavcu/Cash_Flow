@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600 !important;
+    background-color: #f5f5f5 !important;
+}
+#maincon {
+    background-color: #eaecee;
+}
+.akate {
+    width: 100% !important;
+    min-height: 150px;
+}
+
+.islemler > li {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+ul.islemler > li > input {
+    margin-right: 15px !important;
+    margin-left: 40px !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
+.col.barin {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.katedit {
+    width: 99% !important;
+    min-height: 150px;
+    margin-top: -165px;
+}
+.dugmeler {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+}
+.barinx {
+    margin-top: 80px !important;
+}
+.ciftati {
+    background-color: #287271;
+}
+.isodet {
+    width: 99% !important;
+    min-height: 150px;
+}
+ul.islemler2 > li {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+ul.islemler3 > li {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+button.isleme-ekle.mb-3 {
+    width: 240px;
+}
+.bunytr {
+    width: 310px;
+}
+.bunytra {
+    width: 240px;
+    margin-left: 38px;
+}
+.popupcouk {
+    width: 320px;
+}
+.popupcouk > select {
+    margin-left: 80px !important;
+    width: 100px;
+}
+#popup > input,
+#popup3 > input,
+#popup4 > input,
+#popup5 > input,
+#popup6 > input,
+#popup7 > input,
+#popupEmlak > input {
+    border: 1px solid;
+}
+#popup > label,
+#popup3 > label,
+#popup4 > label,
+#popup5 > label,
+#popup6 > label,
+#popup7 > label,
+#popupEmlak > label {
+    font-family: 'Poppins', sans-serif;
+}
+#popup > button,
+#popup3 > button,
+#popup4 > button,
+#popup5 > button,
+#popup6 > button,
+#popup7 > button,
+#popupEmlak > button {
+    font-family: 'Poppins', sans-serif;
+}
+#popup > select,
+#popup3 > select,
+#popup4 > select,
+#popup5 > select,
+#popup6 > select,
+#popup7 > select,
+#popupEmlak > select {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid;
+}
+/*bora*/
+#popup,
+#popup3,
+#popup4,
+#popup5,
+#popup6,
+#popup7,
+#popupEmlak {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 30px; /* Önceki değer: 20px */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Önceki değer: 400px */
+    text-align: center;
+    z-index: 9999;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    transition: transform 0.6s, box-shadow 0.6s;
+}
+
+/* #popup:hover,
+#popup3:hover,
+#popup4:hover,
+#popup5:hover,
+#popup6:hover,
+#popup7:hover,
+#popupEmlak:hover {
+transform: translate(-50%, -50%) scale(1.1);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+} */
+
+#popup label,
+#popup select {
+    display: block;
+    margin: 10px 0;
+    z-index: 9999;
+}
+
+#popup button,
+#popup3 button,
+#popup4 button,
+#popup5 button,
+#popup6 button,
+#popup7 button,
+#popupEmlak button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 9999;
+    margin-top: 10px;
+}
+
+#close-button,
+#close-button-7 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transform: scale(0.5);
+}
+
+label {
+    color: black;
+}
+
+li {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: large;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaecee;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.kategoriler {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kategori,
+.kategori2 {
+    width: 45%;
+    background-color: #287271;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.kategori h2,
+.kategori2 h2 {
+    margin: 0 0 10px;
+}
+
+.islemler,
+.islemler2,
+.islemler3 {
+    list-style: none;
+    padding: 0;
+}
+
+.islemler li,
+.islemler2 li,
+.islemler3 li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.islemler button,
+.islemler2 button,
+.islemler3 button {
+    background: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.toplam {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.toplam span {
+    font-weight: bold;
+}
+.isleme-ekle,
+.isleme-ekle2,
+.isleme-ekle3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+}
+
+.isleme-ekle:hover,
+.isleme-ekle2:hover,
+.isleme-ekle3:hover {
+    background-color: #2980b9;
+}
+
+.bar-container {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bar {
+    width: 75%;
+    height: 30px;
+    background-color: #b3b2b2;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.doluluk,
+.doluluk2 {
+    height: 100%;
+    background-color: #f39c12;
+    border-radius: 5px;
+    width: 0;
+    max-width: 100%;
+    transition: width 0.5s ease;
+}
+
+.container {
+    position: relative;
+}
+
+#toplam-borc {
+    font-weight: bold;
+}
+
+.triangle {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #4caf50;
+}
+
+.passive-income {
+    position: absolute;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
+}
