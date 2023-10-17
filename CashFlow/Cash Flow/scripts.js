@@ -1,5 +1,7 @@
 let anaborcMiktari = 0;
+
 ///////////////////////////G E L İ R L E R
+
 function ekleGelir() {
     const gelirAdi = document.getElementById('gelir-ad').value;
     const gelirMiktar = document.getElementById('gelir-miktar').value;
@@ -31,7 +33,9 @@ function acPopup2() {
     const popup = document.getElementById('popup3');
     popup.style.display = 'block';
 }
+
 ///////////////////////////G İ D E R L E R
+
 function acPopupGider() {
     const popup = document.getElementById('popup4');
     popup.style.display = 'block';
@@ -65,10 +69,12 @@ function acPopup() {
     document.getElementById('popup').style.display = 'block';
 }
 ///////////////////////////B O R Ç L A R
+
 function acPopupBorc() {
     const popup = document.getElementById('popup5');
     popup.style.display = 'block';
 }
+
 function ekleBorc() {
     const borcAdi = document.getElementById('borc-adi').value;
     const borcMiktari = parseFloat(document.getElementById('borc-miktari').value) || 0;
@@ -113,10 +119,12 @@ function ekleBorc() {
     document.getElementById('kalan-taksit').value = '';
 }
 /////////////////////////////V A R L I K L A R
+
 function acPopup4() {
     var popup = document.getElementById('popup7');
     popup.style.display = 'block';
 }
+
 function ekleVarlik() {
     var hisseAdi = document.getElementById('hisseAdi').value;
     var adet = document.getElementById('adet').value;
@@ -209,14 +217,17 @@ function ekleEmlak() {
 
     kapatPopupEmlak();
 }
+
 function acPopup6() {
     const popup = document.getElementById('popup6');
     popup.style.display = 'block';
 }
+
 function acPopup6() {
     const popup = document.getElementById('popup6');
     popup.style.display = 'block';
 }
+
 function ekleMevduat() {
     const mevduatMiktari = parseFloat(document.getElementById('mevduat-miktar').value);
     const faizOrani = parseFloat(document.getElementById('faiz-orani').value);
@@ -251,7 +262,6 @@ function islemiSil(button) {
     var parentElement = button.parentElement;
     parentElement.remove();
 
-    // Silinen öğenin içeriğindeki veriye göre gelirler kısmındaki ilgili değeri de siliyoruz
     var tip = parentElement.textContent.includes('Hisse') ? 'hisse' : parentElement.textContent.includes('Emlak') ? 'emlak' : '';
 
     if (tip === 'hisse') {
@@ -291,6 +301,7 @@ function islemiSil(button) {
 }
 
 ///////////////////////////T O P L A M L A R
+
 function toplamlariGuncelle() {
     const gelirler = document.getElementById('gelir').querySelectorAll('.miktar');
     const giderler = document.getElementById('gider').querySelectorAll('.miktar');
@@ -335,6 +346,7 @@ function toplamlariGuncelle() {
 }
 
 /////////////////////////P O P  -  U P      K A P A T M A
+
 function kapatPopup() {
     const popup = document.getElementById('popup');
     const popup3 = document.getElementById('popup3');
@@ -342,7 +354,7 @@ function kapatPopup() {
     const popup5 = document.getElementById('popup5');
     const popup6 = document.getElementById('popup6');
     const popup7 = document.getElementById('popup7');
-    // Check if the specific popup element exists before trying to hide it
+    
     if (popup) popup.style.display = 'none';
     if (popup3) popup3.style.display = 'none';
     if (popup4) popup4.style.display = 'none';
@@ -350,6 +362,7 @@ function kapatPopup() {
     if (popup6) popup6.style.display = 'none';
     if (popup7) popup7.style.display = 'none';
 }
+
 function updateTrianglePosition() {
     const dolulukElemani = document.querySelector('.doluluk');
     const triangle = document.querySelector('.triangle');
@@ -357,7 +370,9 @@ function updateTrianglePosition() {
     const trianglePosition = dolulukOrani;
     triangle.style.left = `calc(${trianglePosition}%)`;
 }
+
 /////////////////////////// Ç O C U K     P A R A S I    H E S A P L A M A
+
 function hesapla() {
     var yasGrubu = document.getElementById('yas-grubu').value;
     var cocukSayisi = parseInt(document.getElementById('cocuk-sayisi').value);
@@ -393,6 +408,7 @@ function hesapla() {
     `;
     ul.appendChild(li);
     document.getElementById('popup').style.display = 'none';
+
 }
 function toplamlariHesapla() {
     toplamlariGuncelle();
@@ -404,7 +420,6 @@ function hesaplaVeGuncelle() {
     const varliklar = document.getElementById('gelir').querySelectorAll('.miktar2');
     const borclar = document.getElementById('borclar').querySelectorAll('.miktar');
 
-    // Kullanıcının ilgili alanları doldurup doldurmadığını kontrol et
     if (gelirler.length === 0 || giderler.length === 0) {
         alert('Barların Çalışması İçin Borç Eklemeniz Gereklidir, Borcunuz Yok İse Gelir - Gider Kısmını Doldurarak Hesaplama İşlemlerini Sağlayabilirsiniz');
         return;
@@ -430,7 +445,6 @@ function hesaplaVeGuncelle() {
 
     const netGelir = toplamGelir + toplamVarlik - toplamGider;
 
-    // NaN kontrolü yap
     if (isNaN(toplamGelir) || isNaN(toplamGider) || isNaN(toplamVarlik) || isNaN(toplamBorc) || isNaN(netGelir)) {
         alert('Bir veya daha fazla değer geçersiz. Lütfen doğru bir değer girin.');
         return;
@@ -467,8 +481,8 @@ function hesaplaVeGuncelle() {
 }
 
 ///////////////////////////S I F I R L A M A     B U T T O N U
+
 function sifirla() {
-    // Metin alanları sıfırlanıyor
     document.getElementById('toplamGider').textContent = '0.00';
     document.getElementById('toplamPasif').textContent = '0.00';
     document.getElementById('toplamGelir').textContent = '0.00';
@@ -488,10 +502,8 @@ function sifirla() {
     
     const triangle = document.querySelector('.triangle');
     triangle.style.left = '0';
-
-
-
 }
+
 function sifirlaIsimler() {
     const isimListeleri = document.querySelectorAll('.islemler, .islemler2, .islemler3');
     isimListeleri.forEach((liste) => {
