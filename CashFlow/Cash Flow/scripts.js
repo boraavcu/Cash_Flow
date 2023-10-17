@@ -150,7 +150,7 @@ function ekleVarlik() {
     var islemElemaniVarlik = document.createElement('li');
     islemElemaniVarlik.innerHTML = `
     Hisse : ${hisseAdi}<br>
-    Maliyet : ${adet * fiyat}<br>
+    Maliyet : ${(adet * fiyat).toFixed(2)}<br>
     Adet : ${adet}
     <button onclick="islemiSil(this)">Sil</button>
      `;
@@ -194,7 +194,7 @@ function ekleEmlak() {
     var islemElemaniVarlik = document.createElement('li');
     islemElemaniVarlik.innerHTML = `
     Emlak Tipi : ${emlakTipi} <br>
-    ${ay} Aylık Geliri :  ${gelir}
+    ${ay} Aylık Geliri :  ${(gelir).toFixed(2)}
     <button onclick="islemiSil(this)">Sil</button>
     `;
     islemListesiVarlik.appendChild(islemElemaniVarlik);
@@ -202,7 +202,7 @@ function ekleEmlak() {
     var islemListesiGelir = kategoriElementGelir.querySelector('.islemler');
     var islemElemaniGelir = document.createElement('li');
     islemElemaniGelir.innerHTML = `
-    Emlakınızın Aylık Geliri <input type="text" class="miktar2" value="${gelir / ay}">
+    Emlakınızın Aylık Geliri <input type="text" class="miktar2" value="${(gelir / ay).toFixed(2)}">
     <button onclick="islemiSil(this)">Sil</button>
     `;
     islemListesiGelir.appendChild(islemElemaniGelir);
@@ -225,7 +225,7 @@ function ekleMevduat() {
         alert('Lütfen Tüm Alanları Doğru Şekilde Doldurunuz !');
         return;
     }
-    const faizGetirisi = (mevduatMiktari * faizOrani * secilenGun) / 36500;
+    const faizGetirisi = ((mevduatMiktari * faizOrani * secilenGun) / 36500).toFixed(2);
     const kategoriElementVarlik = document.getElementById('varliklar');
     const islemListesiVarlik = kategoriElementVarlik.querySelector('.islemler3');
     const islemElemaniVarlik = document.createElement('li');
@@ -474,15 +474,23 @@ function sifirla() {
     document.getElementById('toplamGelir').textContent = '0.00';
     document.getElementById('toplamBorc').textContent = '0.00';
     document.getElementById('netGelir').textContent = '0.00';
-    // İlgili input alanları sıfırlanıyor
+    document.getElementById('OranKarşılama').textContent = '0.00';
+    document.getElementById('ToplamSüre').textContent = '0.00';
+
     const inputs = document.querySelectorAll('.miktar, .miktar2');
     inputs.forEach((input) => (input.value = ''));
-    // Doluluk göstergesi sıfırlanıyor
+   
     const dolulukElemani = document.querySelector('.doluluk');
     dolulukElemani.style.width = '0';
-    // Üçgen pozisyonu sıfırlanıyor
+
+    const dolulukElemani2 = document.querySelector('.doluluk2');
+    dolulukElemani2.style.width = '0';
+    
     const triangle = document.querySelector('.triangle');
     triangle.style.left = '0';
+
+
+
 }
 function sifirlaIsimler() {
     const isimListeleri = document.querySelectorAll('.islemler, .islemler2, .islemler3');
