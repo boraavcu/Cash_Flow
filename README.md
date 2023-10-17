@@ -13,7 +13,7 @@ Cash_Flow
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/584d5df5-6747-4c9c-b9cd-0c1703095e4d)
 
-** " Giderler " kısmında yine alıcı taarfından istenen sabit tutarları olan çocuk giderleri butonu bulunmaktadır. Bu buton tıklamısıyla kullanıcının sahip olduğu çocuk veya çocuklarının yaş grubunu ve
+** " Giderler " kısmında yine alıcı tarafından istenen sabit tutarları olan çocuk giderleri butonu bulunmaktadır. Bu buton tıklamısıyla kullanıcının sahip olduğu çocuk veya çocuklarının yaş grubunu ve
 sayısını seçerekten alıcının belirlediği sabit miktarlar yaş grubu ve sayısına bağlı olaraktan değişmektedir. ( Alıcının belirlediği sabit tutarları JavaScript Kodlarının içerisinde bulabilirsiniz. )
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/91760d80-e294-46d8-86e7-f55d3f155185)
