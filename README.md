@@ -35,11 +35,11 @@ aylık olarak " Gelirler " kısmına aktarılır. Yani örnek ekran görüntüs�
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/3c28ea88-82e8-425b-a721-a7ac623ee25e)
 
 ** " Varlıklar " kısmı altındaki alt başlık olan " Emlak " kısmında kullanıcı sahip olduğu emlak tipini, gelirini ve bu gelirin kaç aylık gelir olduğunu seçer. Sonuçlar yine aynı şekilde " Emlak " kısmına
-ekran görüntüsündeki gibi eklenir. Emlak gelirinin aylık geliri hesaplanarak " Gelirler " Kısmına eklenir. 
+ekran görüntüsündeki gibi eklenir. Emlak gelirinin aylık geliri hesaplanarak " Gelirler " kısmına eklenir. 
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/1b740599-4853-4f3b-af01-95574092f18c)
 
-** Örnek ekran görüntüsünde kullanıcı dükkanım adlı emlakı için 138000 / 12 Ay şeklinde veri girmiştir. Gelirler kısmına aylık gelir pasif gelir olaraktan eklenir. ( 138000 / 12 = 11.500)
+** Örnek ekran görüntüsünde kullanıcı dükkanım adlı emlakı için 138000 / 12 Ay şeklinde veri girmiştir. Gelirler kısmına aylık gelir, pasif gelir olaraktan eklenir. ( 138000 / 12 = 11.500)
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/84c964c8-53bc-48b0-93d8-3cb8b2c66845)
 
