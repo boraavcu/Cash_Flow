@@ -13,7 +13,7 @@ Cash_Flow
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/584d5df5-6747-4c9c-b9cd-0c1703095e4d)
 
-** " Giderler " kısmında yine alıcı tarafından istenen sabit tutarları olan çocuk giderleri butonu bulunmaktadır. Bu buton tıklamısıyla kullanıcının sahip olduğu çocuk veya çocuklarının yaş grubunu ve
+** " Giderler " kısmında yine alıcı tarafından istenen sabit tutarları olan çocuk giderleri butonu bulunmaktadır. Bu buton tıklamasıyla kullanıcının sahip olduğu çocuk veya çocuklarının yaş grubunu ve
 sayısını seçerekten alıcının belirlediği sabit miktarlar yaş grubu ve sayısına bağlı olaraktan değişmektedir. ( Alıcının belirlediği sabit tutarları JavaScript Kodlarının içerisinde bulabilirsiniz. )
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/91760d80-e294-46d8-86e7-f55d3f155185)
@@ -27,6 +27,7 @@ sayısını seçerekten alıcının belirlediği sabit miktarlar yaş grubu ve s
 
 ** Bu kısımda kullanıcı sahip olduğu hisse veya temettü gelirinin adını/kodunu yazaraktan bu varlığı aldığı fiyat bilgisini ve adetini girer. Son olarakta bu hisse veya temettünün kaç aylık periyotlarda
 ne kadar temettü ödemesi yaptığını girerekten, seçtiği ay sayısı kadar temettü geliri bölünerekten aylık pasif geliri bulunmaktadır.
+
 ** Ekran görüntüsünde ASTOR kodlu hisseden 78.30 fiyatından 350 adet alındığını ve bu hissenin 6 aylık periyolarda 4.38 temettü ödemesi yaptığı söylenmiştir. " Varlıklar " kısmına alıcının isteği doğrultusunda
 o hissenin sırasıyla adı,maliyeti ( Adet * Alım Fiyatı ) ve adeti yazmaktadır. Ayrıyeten seçilen periyota göre elde edilen temettü geliri ( ( Hisse Başı Temettü Getirisi * Adet ) / 6 (Seçilen Periyot))
 aylık olarak " Gelirler " kısmına aktarılır. Yani örnek ekran görüntüsündeki miktar ( ( 350 * 4.38 ) / 6 ) sonucu " Gelirler " kısmına eklenmesi gerekmektedir. ( 255.5 )
@@ -35,6 +36,7 @@ aylık olarak " Gelirler " kısmına aktarılır. Yani örnek ekran görüntüs�
 
 ** " Varlıklar " kısmı altındaki alt başlık olan " Emlak " kısmında kullanıcı sahip olduğu emlak tipini, gelirini ve bu gelirin kaç aylık gelir olduğunu seçer. Sonuçlar yine aynı şekilde " Emlak " kısmına
 ekran görüntüsündeki gibi eklenir. Emlak gelirinin aylık geliri hesaplanarak " Gelirler " Kısmına eklenir. 
+
 ** Örnek ekran görüntüsünde kullanıcı dükkanım adlı emlakı için 138000 / 12 Ay şeklinde veri girmiştir. Gelirler kısmına aylık gelir pasif gelir olaraktan eklenir. ( 138000 / 12 = 11.500)
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/84c964c8-53bc-48b0-93d8-3cb8b2c66845)
@@ -67,6 +69,7 @@ ne kadar oranda karşıladığını barlar yardımıyla kolay görebilmektesiniz
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/58bd410e-68b1-4128-9a22-92da4a316ec5)
 
 ** Toplamları Hesapla butonun yanındaki Sıfırla butonuyla bütün veriler silinerek en baştan tekrar hesaplayabilir veya girilen değerleri değiştirerek değişiklikler yapabilmektesiniz.
+
 ** Uygulama tamamen alıcının isteklerini göre yapılmıştır buna tüm tasarım dahildir arka plan, yazı fontları, pop up özellikleri vs. özelleştirilebilir.
 
 
