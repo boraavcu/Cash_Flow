@@ -53,7 +53,7 @@ yansıyan miktarı ise 3123.29 olması gerekmektedir.
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/23f9740e-e919-4b79-aabf-88ca327fd7d4)
 
-** Ünlü mevduat faiz oranı hesaplayan sitelerle kıysalandığında %100 doğru sonuç elde edilmektedir. Sonraki fotoğraftada görüldüğü gibi 100000 değerindeki mevduata %40 ve 32 günlük kazanç 3331.51'dir.
+** Ünlü mevduat faiz oranı hesaplayan sitelerle kıyaslandığında %100 doğru sonuç elde edilmektedir. Sonraki fotoğraftada görüldüğü gibi 100000 değerindeki mevduata %40 ve 32 günlük kazanç 3331.51'dir.
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/72b01361-8ad6-46aa-baa6-5355a943d86d)
 
