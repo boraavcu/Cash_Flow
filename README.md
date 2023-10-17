@@ -32,10 +32,12 @@ ne kadar temettü ödemesi yaptığını girerekten, seçtiği ay sayısı kadar
 o hissenin sırasıyla adı,maliyeti ( Adet * Alım Fiyatı ) ve adeti yazmaktadır. Ayrıyeten seçilen periyota göre elde edilen temettü geliri ( ( Hisse Başı Temettü Getirisi * Adet ) / 6 (Seçilen Periyot))
 aylık olarak " Gelirler " kısmına aktarılır. Yani örnek ekran görüntüsündeki miktar ( ( 350 * 4.38 ) / 6 ) sonucu " Gelirler " kısmına eklenmesi gerekmektedir. ( 255.5 )
 
-** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/1b740599-4853-4f3b-af01-95574092f18c)
+** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/3c28ea88-82e8-425b-a721-a7ac623ee25e)
 
 ** " Varlıklar " kısmı altındaki alt başlık olan " Emlak " kısmında kullanıcı sahip olduğu emlak tipini, gelirini ve bu gelirin kaç aylık gelir olduğunu seçer. Sonuçlar yine aynı şekilde " Emlak " kısmına
 ekran görüntüsündeki gibi eklenir. Emlak gelirinin aylık geliri hesaplanarak " Gelirler " Kısmına eklenir. 
+
+** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/1b740599-4853-4f3b-af01-95574092f18c)
 
 ** Örnek ekran görüntüsünde kullanıcı dükkanım adlı emlakı için 138000 / 12 Ay şeklinde veri girmiştir. Gelirler kısmına aylık gelir pasif gelir olaraktan eklenir. ( 138000 / 12 = 11.500)
 
