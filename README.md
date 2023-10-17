@@ -57,7 +57,7 @@ yansıyan miktarı ise 3123.29 olması gerekmektedir.
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/72b01361-8ad6-46aa-baa6-5355a943d86d)
 
-** Son olarakta " Borçlar " kısmında kullanıcı sahp olduğu her hangi bir borcu girerek ana borç miktarı ve girdiği taksit sayısına göre aylık borç miktarı hesaplanır. 
+** Bir sonraki alan olan " Borçlar " kısmında kullanıcı sahip olduğu her hangi bir borcu girerek ana borç miktarı ve girdiği taksit sayısına göre aylık borç miktarı hesaplanır. 
 
 ** ![image](https://github.com/boraavcu/Cash_Flow/assets/110854353/34231222-996f-414a-a628-0920a1099045)
 
